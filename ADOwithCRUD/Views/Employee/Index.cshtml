@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ADOwithCRUD.Models.Employees>;
+
+<table class="table table-bordered">
+    <thead class="col-6 offset-3">
+        <tr>
+            <th>Id</th>
+            <th>Ename</th>
+            <th>Email</th>
+            <th>mobile</th>
+            <th>address</th>
+        </tr>
+    </thead>
+ @foreach(var emp in Model)
+            {
+<tr>
+    <td>@emp.id</td>
+    <td>@emp.Ename</td>
+    <td>@emp.Email</td>
+    <td>@emp.Mobile</td>
+    <td>@emp.address</td>
+</tr>
+            }
+
+</table>
+
